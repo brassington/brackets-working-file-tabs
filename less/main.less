@@ -14,7 +14,8 @@
 
     .working-file-tabs-scroll-container {
         min-height: @tab-min-height;
-        margin-left: @tool-width;
+        margin-left: 0px;
+        // margin-left: @tool-width;
         margin-right: @tab-scroll-width;
         position: relative;
         overflow: hidden;
@@ -39,21 +40,21 @@
         background-color: transparent;
     }
     .working-set-option-btn {
-        left: 31px;
+        left: -29px;
         right: auto;
-        top: (@tab-min-height - 22) / 2;
+        // top: (@tab-min-height - 22) / 2;
     }
     .working-set-splitview-btn {
-        left: 4px;
+        left: -53px;
         right: auto;
-        top: (@tab-min-height - 22) / 2;
+        // top: (@tab-min-height - 22) / 2;
     }
     .working-file-tabs-scroll {
         font-size: 14px;
         text-align: center;
         line-height: 13px;
         position: absolute;
-        top: (@tab-min-height - 22) / 2;
+        top: (@tab-min-height + 52) / 2;
         width: 13px;
         height: 13px;
         padding: 4px 6px;
@@ -99,7 +100,7 @@
         transition: margin 0.01s;
         &+.working-set-view {
             li:first-child {
-                border-left: solid 1px rgba(255, 255, 255, 0.298039);
+                border-left: solid 2px rgba(0, 0, 0, 0.298039);
             }
         }
     }
@@ -117,6 +118,8 @@
             &.selected {
                 background: @selected-bg-color;
                 opacity: 1;
+                border-top-left-radius: 15% 50%;
+                border-top-right-radius: 15% 50%;
             }
             &:hover {
                 opacity: 1;
